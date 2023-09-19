@@ -181,14 +181,7 @@ main{
     font-size: 12px;
   }
 
-  .content{
-    background-color: #f9f9f9;
-    width: 270px;
-    height: 100%;
-    padding: 15px 15px;
-    border-top: 1px solid #ddd;
-    overflow-y: scroll;
-  }
+  
 
   @media (max-width: 768px) {
     .side-bar {
