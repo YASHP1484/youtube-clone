@@ -34,11 +34,6 @@ main{
     overflow-y: hidden;
 }
 
-@media (max-width: 768px) {
-    .side-bar {
-      display: none;
-    }
-  }
 
   /* Step 2: Style the header child section */
 
@@ -127,12 +122,12 @@ main{
 
   .content{
     background-color: #f9f9f9;
-    width: 87%;
+    width: 100%;
     height: 100%;
     padding: 15px 15px;
     border-top: 1px solid #ddd;
     overflow-y: scroll;
-  }
+  } 
 
   .videos{
     display: flex;
@@ -195,23 +190,18 @@ main{
     overflow-y: scroll;
   }
 
+  @media (max-width: 768px) {
+    .side-bar {
+      display: none;
+    }
+    .search {
+      display: none;
+    }
+}
 
-  .videos{
-    display: block;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    flex-wrap: wrap;
-
+@media (max-width: 900px) {
+  .search input {
+    width: 25rem;
   }
-
-  .video{
-    width: 270px;
-    margin-bottom: 30px;
-  }
-
-  .video img{
-    object-fit: cover;
-    height: 94%;
-    width: 100%;
-  }
-  
+}
+ 
